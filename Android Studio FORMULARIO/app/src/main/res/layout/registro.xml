@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Título del Formulario -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp"
+            android:text="Formulario de Registro"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Campo de Nombre -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="360dp"
+            android:layout_height="140dp"
+            android:src="@drawable/foto" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Nombre Completo:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="288dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="48dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Ingresa tu nombre"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Campo de Correo Electrónico -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Correo Electrónico:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_correo"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="32dp"
+            android:hint="Ingresa tu correo"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="16sp"/>
+
+        <!-- Campo de Género (Radio Buttons) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Género:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_genero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rb_masculino"
+                android:layout_width="123dp"
+                android:layout_height="48dp"
+                android:text="Masculino"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Femenino"
+                android:textSize="16sp"/>
+        </RadioGroup>
+
+        <!-- Casilla de verificación para Términos y Condiciones -->
+        <CheckBox
+            android:id="@+id/cb_terminos"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:paddingTop="16dp"
+            android:text="Acepto los términos y condiciones"
+            android:textSize="16sp" />
+
+        <!-- Botón para Enviar -->
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Enviar"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
