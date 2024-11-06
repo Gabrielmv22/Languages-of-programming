@@ -18,7 +18,7 @@ import java.io.InputStreamReader;
 public class Cliente extends AppCompatActivity {
 
     private EditText txtCliente;
-    private TextView txtListado; 
+    private TextView txtListado;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -27,7 +27,7 @@ public class Cliente extends AppCompatActivity {
         setContentView(R.layout.activity_cliente);
 
         txtCliente = findViewById(R.id.txtCliente);
-        txtListado = findViewById(R.id.txtListado); 
+        txtListado = findViewById(R.id.txtListado);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -37,7 +37,7 @@ public class Cliente extends AppCompatActivity {
     }
 
     public void guardar(View view) {
-        String texto = txtCliente.getText().toString().trim() + "\n"; 
+        String texto = txtCliente.getText().toString().trim() + "\n";
         FileOutputStream fileOutputStream = null;
         try {
             fileOutputStream = openFileOutput("texto.txt", MODE_APPEND);
